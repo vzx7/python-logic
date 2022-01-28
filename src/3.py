@@ -51,7 +51,7 @@ print("Задание №2")
 """
 
 def selectFunc():
-    print("Выберите функцию, введя число, где\n1 = 1-2x\n2 = 2 - x ^ 2\n3 = 3 - x / 3")
+    print("Выберите функцию, введя число, где\n1 = 1 - 2x\n2 = 2 - x ^ 2\n3 = 3 - x / 3")
     return int(input())
 
 select = selectFunc()
@@ -71,10 +71,13 @@ fx = 0
 
 if select == 1:
     fx = 2 * x
+    print("Была выбрана функция №1. 1-2x")
 elif select == 2:
     fx = x ** 2
+    print("Была выбрана функция №2. 2 - x ^ 2")
 elif select == 3:
     fx = fx / 3
+    print("Была выбрана функция №3. 3 - x / 3")
 else:
     print("\n!!! Функция не выбрана !!!\n")
     selectFunc()
